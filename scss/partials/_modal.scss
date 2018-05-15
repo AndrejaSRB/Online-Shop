@@ -1,0 +1,36 @@
+.modal-label {
+  margin-bottom: 0;
+  margin-top: 10px;
+}
+.modal-5  {
+  width: 50%;
+  padding: 10px;
+}
+.modal-flex {
+  display: flex;
+  flex-wrap: wrap;
+}
+h5 {
+  text-transform: uppercase;
+}
+.pw-input {
+  margin-bottom: 15px;
+}
+.modal-btn {
+  background-color: #17a2b8;
+  color: #fff;
+  border: 1px solid transparent;
+  transition: all 0.4s;
+  margin-bottom: 10px;
+  &:hover {
+    color: #17a2b8;
+    background-color: #fff;
+    border: 1px solid #17a2b8;
+    transition: all 0.4s;
+  }
+}
+.close {
+  &:focus {
+    outline: none;
+  }
+}

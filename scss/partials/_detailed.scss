@@ -1,0 +1,245 @@
+main {
+  .detailed-header {
+    a {
+      color: $text-color;
+      text-decoration: none;
+      margin: 30px 0;
+      display: block;
+      &:hover {
+        color: #000;
+        text-decoration: none;
+      }
+      &:before {
+        content: "";
+        background-image: url("../img/arrow-gray.png");
+        background-repeat: no-repeat;
+        background-position: 0 1px;
+        background-size: auto;
+        width: 9px;
+        height: 16px;
+        display: inline-block;
+        margin-right: 8px;
+      }
+    }
+  }
+  .picture-4 {
+    width: 100%;
+    background-color: #fff;
+  }
+  .picture-holder {
+    .holder-img {
+      img {
+        display: block;
+        margin: 0 auto;
+      }
+    }
+    .small-img {
+      display: none;
+    }
+  }
+  .info-product {
+    h2 {
+      font-size: 24px;
+      margin-bottom: 15px;
+    }
+    .info-text {
+      color: $detailed-text;
+      margin-bottom: 40px;
+    }
+  }
+  .terms-holder {
+    display: flex;
+    justify-content: space-between;
+    line-height: 22px;
+    margin-bottom: 15px;
+    .prod-colors {
+      display: flex;
+      justify-content: flex-end;
+      padding: 0;
+      li {
+        margin-left: 5px;
+        a {
+          display: block;
+          width: 16px;
+          height: 16px;
+        }
+      }
+    }
+    .price {
+      text-transform: uppercase;
+      font-size: 24px;
+      color: #000;
+      margin-bottom: 0;
+    }
+    .qunatity {
+      width: 30px;
+      text-align: center;
+      background-color: transparent;
+      border: 1px solid #ccc;
+    }
+  }
+  .order-button {
+    background-color: #5EB09B;
+    color: #fff;
+    line-height: 40px;
+    text-align: center;
+    margin-top: 50px;
+    display: block;
+    transition: all 0.5s;
+    &:hover {
+      text-decoration: none;
+      background-color: #448B79;
+      transition: all 0.3s;
+    }
+  }
+  article {
+    margin-bottom: 70px;
+  }
+  .special-offer {
+    .active {
+      border-top: 2px solid #acdacf;
+    }
+    h2 {
+      text-transform: uppercase;
+      font-size: 24px;
+      border-top: 2px solid transparent;
+      display: inline-block;
+      padding-top: 5px;
+      margin-bottom: 20px
+    }
+  }
+}
+@media all and (min-width:760px) {
+  main {
+     .picture-4{
+       width: 45%;
+       padding: 10px;
+       background-color: transparent;
+     }
+     .picture-7{
+       width: 55%;
+       padding: 10px;
+     }
+
+     .order-button {
+       display: inline-block;
+       padding: 0 35px;
+     }
+     .terms-holder {
+       justify-content: flex-start;
+       .term {
+         margin-right: 20px;
+         width: 80px;
+       }
+       .price {
+         margin-right: auto;
+       }
+     }
+     .picture-holder {
+       margin-bottom: 40px;
+        .holder-img {
+          transition: all 0.4s;
+          background-color: white;
+          &:hover {
+            opacity: 0.5;
+            transition: all 0.4s;
+          }
+          img {
+            margin: 0 auto;
+            display: block;
+          }
+        }
+       .small-img {
+         display: block;
+         display: flex;
+         justify-content: space-between;
+         padding: 0;
+         margin: 0;
+         a {
+           display: block;
+           margin-top: 20px;
+           padding: 0 7px 0 7px;
+           transition: all 0.4s;
+           &:first-child {
+             padding-left: 0;
+           }
+           &:last-child {
+             padding-right: 0;
+           }
+           &:hover {
+             opacity: 0.5;
+             transition: all 0.4s;
+           }
+           img {
+               width: 44px;
+           }
+         }
+       }
+     }
+}
+
+}
+@media all and (min-width:990px) {
+  main {
+    .picture-holder {
+       .holder-img {
+         display: block;
+         margin-right: auto;
+         margin-left: auto;
+       }
+      .small-img {
+        a {
+          img {
+            width: 63px;
+          }
+        }
+      }
+    }
+    .terms-holder {
+      .prod-colors {
+        width: 114px;
+      }
+      .free {
+        width: 114px;
+        text-align: right;
+      }
+      .qunatity-span {
+        text-align: right;
+        width: 114px;
+      }
+    }
+  }
+}
+@media all and (min-width:1200px) {
+  main {
+       .picture-4{
+         width: 42%;
+         padding: 15px;
+       }
+       .picture-7{
+         width: 58%;
+         padding: 15px;
+       }
+       .picture-holder {
+          .holder-img {
+            display: block;
+            margin-right: auto;
+            margin-left: auto;
+          }
+         .small-img {
+           a {
+             img {
+               width: 80px;
+             }
+           }
+         }
+       }
+      .special-offer {
+        .product-holder {
+          .row  {
+            flex-wrap: nowrap;
+          }
+        }
+      }
+  }
+}

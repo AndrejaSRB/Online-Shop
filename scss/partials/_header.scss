@@ -1,0 +1,173 @@
+header {
+  .top-bar {
+    padding: 7px 0;
+
+    .header-flex {
+      display: flex;
+      justify-content: space-between;
+
+      .header-info {
+        a {
+          color: $header-color;
+          text-decoration: none;
+          text-transform: uppercase;
+          font-size: 14px;
+
+          &:hover {
+            color: $font-color;
+          }
+        }
+      }
+    }
+  }
+  .login-in {
+    &:focus {
+      outline: none;
+    }
+  }
+
+  .white-holder {
+    background-color: #fff;
+
+    .row {
+      .white-header1 {
+        order: 1;
+
+        button {
+          .navbar-toggler {
+            border: 0;
+          }
+        }
+      }
+    }
+  }
+}
+
+.white-holder {
+  .search-flex {
+    display: flex;
+    flex-wrap: wrap;
+    padding-bottom: 10px;
+  }
+
+  .search-item1 {
+    position: relative;
+    width: 100%;
+    display: table;
+  }
+
+  .logo {
+    width: 58px;
+    margin-top: 17px;
+    order: 1;
+    margin-left: -5px;
+  }
+
+  h1 {
+    position: absolute;
+    width: 50px;
+    top: 3px;
+    left: 35px;
+  }
+
+  nav {
+    padding: 0;
+    margin-left: 0;
+    position: relative;
+
+    .navbar-nav {
+      text-align: center;
+
+      a {
+        display: table;
+        margin: 0 auto;
+      }
+
+      .nav-link {
+        text-transform: uppercase;
+        border-bottom: 2px solid transparent;
+        padding-bottom: 5px;
+
+        &:hover {
+          border-bottom: 2px solid #acdacf;
+          transition: all 0.7s;
+        }
+      }
+    .active {
+      border-bottom: 2px solid #acdacf;
+    }
+    }
+
+    .navbar-toggler {
+      border: 0;
+      padding-right: 0;
+      padding-left: 0;
+
+      &:focus {
+        outline: 0;
+      }
+
+      .navbar-toggler-icon {
+        background-image: url("../img/hamburger.svg");
+        background-repeat: no-repeat;
+        line-height: 1.1;
+        width: 20px;
+        height: 16px;
+        margin-top: 15px;
+      }
+    }
+  }
+
+  .search-bar {
+    position: absolute;
+    right: 20px;
+    top: 37px;
+
+    form {
+      position: relative;
+    }
+
+    .search-line {
+      border: 0;
+      border-bottom: 1px solid $text-color;
+      width: 120px;
+      margin-top: 15px;
+      outline: inherit;
+      padding-right: 20px;
+    }
+
+    .search {
+      background-image: url("../img/search-icon.png");
+      border: 0;
+      padding: 0;
+      position: absolute;
+      right: 3px;
+      bottom: 3px;
+      background-color: transparent;
+      width: 17px;
+      height: 17px;
+      cursor: pointer;
+      outline: inherit;
+    }
+
+    .basket {
+      margin-top: 15px;
+      margin-left: 24px;
+      margin-right: 5px;
+      position: relative;
+      right: 10px;
+
+      span {
+        border-radius: 50%;
+        position: absolute;
+        left: 0;
+        top: 13px;
+        left: 6px;
+      }
+    }
+  }
+}
+
+.search-flex {
+  justify-content: space-between;
+}
